@@ -14,6 +14,7 @@
 		<!-- #CSS Links -->
 		<!-- Basic Styles -->
 		<link rel="stylesheet" type="text/css" media="screen" href="../../modules/base/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../../modules/base/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" media="screen" href="../../modules/base/production.css">
 
 		<link rel="shortcut icon" href="../../static/image/favicon/favicon.ico" type="image/x-icon">
@@ -23,26 +24,38 @@
 
 	<body class="主体样式">
 
-		<!-- 页头   -->
-		<nav class="navbar navbar-default" id="header" style="vertical-align: middle;">
-			<div class="collapse navbar-collapse">
-				<a href="javascript:void(0)"><img src="../../static/image/logo.png" alt=""></a>
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">主页<span class="sr-only"></span></a></li>
-					<li><a href="#">文档</a></li>
-					<li><a href="#">待用</a></li>
-					<li><a href="#">待用</a></li>
-				</ul>
-				<form class="navbar-form navbar-right" role="search">
-					<input type="text" class="form-control" placeholder="Search">
-				</form>
+		<div id="header">
+			<div class="page-container" id="nav">
+				<!-- logo  -->
+				<div id="logo" class="logo">
+					<a href="/" target="_self" class="hide-text"></a>
+				</div>
+				<!-- 模块 -->
+				<div class="g-menu-mini l">
+					<ul class="nav-item l hidden-xs">
+						<li>
+							<a href="" class="active" target="_self">guanl</a>
+						</li>
+						<li><a href="" target="_self">计划</a></li>
+						<li><a href="" target="_self">分享</a></li>
+						<li><a href="" target="_self">社区</a></li>
+					</ul>
+				</div>
+				<!-- 搜索框  -->
+				<div class="search-area hidden-xs">
+					<form action="/index/search" name="search-form" method="get">
+						<input class="js-input-keyword search-input" placeholder="搜索课程、问答" type="text" autocomplete="off" name="words" value="">
+						<input type="button" class="btn_search js-btn-search">
+						<dl class="search-area-result"></dl>
+					</form>
+				</div>
 			</div>
-		</nav>
+		</div>
 
 		<!-- 左边树   -->
 		<aside id="left-panel">
 			<!-- User info -->
-			<div class="login-info">
+			<!--<div class="login-info">
 				<span> <a href="smart_apps/rbac/mdlconts/userinfo.jsp"
 				id="show-shortcut" data-toggle="modal" data-target="#userInfoModal">
 					<img src="smtapp/images/avatars/${userinfo.username}.png" alt="me"
@@ -53,7 +66,7 @@
 			</div>
 			<!-- end user info -->
 
-			<nav>
+			<!--<nav>
 				<ul>
 					<li class="">
 						<a href="ajax/dashboard.html" title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Dashboard</span></a>
@@ -82,31 +95,12 @@
 			</nav>
 			<span class="minifyme" data-action="minifyMenu"> <i
 			class="fa fa-arrow-circle-left hit"></i>
-		</span>
+		</span>-->
 		</aside>
 
 		<!-- 主页面   -->
 		<div id="main" role="main">
-			<div id="ribbon">
-				<span class="ribbon-button-alignment"> <span id="refresh"
-				class="btn btn-ribbon" data-action="resetWidgets"
-				data-title="refresh" rel="tooltip" data-placement="bottom"
-				data-original-title="<i class='text-warning fa fa-warning'></i> ${beforerefresh}."
-				data-html="true" data-reset-msg="${bfclsstore}"><i
-					class="fa fa-refresh"></i></span>
-				</span>
-				<ol class="breadcrumb">
 
-				</ol>
-			</div>
-			<!-- 用户信息Model-由于需要在content上弹出，所以该model放到这里 wangchao -->
-			<div class="modal fade" id="userInfoModal" tabindex="-1" role="dialog" aria-labelledby="remoteModalLabel" aria-hidden="true" data-backdrop="static">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<!-- content will be filled here from "ajax/modal-content/model-content-1.html" -->
-					</div>
-				</div>
-			</div>
 			<!-- 用户信息Model -->
 			<div id="content"></div>
 		</div>
