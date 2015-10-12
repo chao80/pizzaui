@@ -1,0 +1,191 @@
+
+.smart-style-0 a {
+	transition: color .1s linear 0s, background-color .1s linear 0s
+		!important
+}
+
+.smart-style-0 body.container {
+	border-left: 1px solid rgba(34, 38, 46, .4);
+	border-right: 1px solid rgba(34, 38, 46, .4)
+}
+
+.smart-style-0 #header {
+	background-image: none;
+	background-color: #22262e
+}
+
+.smart-style-0 .btn-header a {
+	background: #fb3c4a;
+	border: 1px solid #fb3c4a;
+	color: #fff !important;
+	cursor: pointer !important
+}
+
+.smart-style-0 .btn-header a:hover {
+	opacity: .9
+}
+
+
+.smart-style-0 .minifyme {
+	background: #434953
+}
+
+.smart-style-0 .minifyme:hover {
+	background: #5C6C86;
+	color: #e1e8f3
+}
+
+.smart-style-0 aside
+{
+	background: #1b1e24
+}
+
+.fa-plus-square-o:before {
+	content: "\f104"
+}
+
+.fa-minus-square-o:before {
+	content: "\f107"
+}
+
+.smart-style-0 nav ul ul li>a {
+	text-shadow: 0 1px 1px #000;
+	font-size: 13px;
+	padding-left: 43px;
+	color: #e1eaf1;
+	display: block;
+	font-weight: 300;
+	padding-top: 6px !important;
+	padding-bottom: 6px !important
+}
+
+.smart-style-0 nav ul ul ul li a {
+	padding: 8px 17px 8px 54px !important
+}
+
+.smart-style-0 nav ul ul ul ul li a {
+	padding-left: 72px !important
+}
+
+.smart-style-0 nav ul ul ul ul ul li a {
+	padding-left: 90px !important
+}
+
+.smart-style-0 nav ul ul ul ul ul ul li a {
+	padding-left: 108px !important
+}
+
+.smart-style-0 nav>ul ul li::before,.smart-style-0 nav>ul>li>ul::before
+	{
+	border: none !important
+}
+
+.smart-style-0 nav>ul>li>a>i {
+	font-size: 17px;
+	vertical-align: 0
+}
+
+.smart-style-0 nav>ul>li>a b {
+	right: 17px;
+	top: 12px
+}
+
+.smart-style-0 nav>ul>li>a>i:after {
+	border: 1px solid #fff
+}
+
+.smart-style-0 nav ul ul {
+	background: #22262E
+}
+
+.smart-style-0 nav ul ul li>a:hover {
+	background: #1b1e24 !important
+}
+
+.smart-style-0 nav ul li a
+	{
+	color: #8b91a0
+}
+
+.smart-style-0 nav ul li a:active {
+	background: 0 0
+}
+
+.smart-style-0 nav ul li a:hover {
+	color: #E1EAF1
+}
+
+.smart-style-0 nav ul li a {
+	padding: 12px 17px 12px 16px
+}
+
+.smart-style-0 nav>ul>li>a:hover i {
+	-webkit-animation-name: none;
+	-moz-animation-name: none;
+	-o-animation-name: none;
+	animation-name: none
+}
+
+
+.smart-style-0.minified nav ul li a {
+	padding: 12px 17px 12px 14px
+}
+
+.smart-style-0.minified nav>ul>li>a>i {
+	font-size: 18px
+}
+
+.smart-style-0.minified nav>ul>li {
+	border-bottom: 1px solid #131416;
+	border-top: 1px solid #303031
+}
+
+.smart-style-0.minified nav>ul>li>ul {
+	background: #1B1E24
+}
+
+.smart-style-0.minified nav>ul>li>ul>li {
+	background: #22262E
+}
+
+.smart-style-0.minified .login-info img {
+	width: 30px !important
+}
+
+.smart-style-0.minified .login-info span {
+	padding: 0 5px !important
+}
+
+.smart-style-0.minified nav ul ul li>a:hover {
+	background: #30343D !important
+}
+
+.smart-style-0.minified nav ul>li>ul>li>ul,.smart-style-0.minified nav>ul>li>ul>li>ul>li
+	{
+	background: #1B1E24
+}
+
+.smart-style-0.minified nav ul ul li>a {
+	padding-left: 13px;
+	padding-right: 13px !important
+}
+
+.smart-style-0.minified nav ul ul ul li a {
+	padding-left: 33px !important;
+	padding-right: 13px !important
+}
+
+.smart-style-0.minified nav ul ul ul ul li a {
+	padding-left: 43px !important;
+	padding-right: 13px !important
+}
+
+.smart-style-0.minified nav ul ul ul ul ul li a {
+	padding-left: 53px !important;
+	padding-right: 13px !important
+}
+
+.smart-style-0.minified nav ul ul ul ul ul ul li a {
+	padding-left: 63px !important;
+	padding-right: 13px !important
+}
