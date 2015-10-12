@@ -16,92 +16,52 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="../../modules/base/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" media="screen" href="../../modules/base/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" media="screen" href="../../modules/base/production.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../../modules/base/skins.css">
 
 		<link rel="shortcut icon" href="../../static/image/favicon/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="../../static/image/favicon/favicon.ico" type="image/x-icon">
 
 	</head>
 
-	<body class="主体样式">
+	<body class="smart-style-0">
 
-		<div id="header">
-			<div class="page-container" id="nav">
-				<!-- logo  -->
-				<div id="logo" class="logo">
-					<a href="/" target="_self" class="hide-text"></a>
+		<header class="navbar navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="javascript:void(0)"> <img src="../../static/image/logo.png">
+					</a>
 				</div>
-				<!-- 模块 -->
-				<div class="g-menu-mini l">
-					<ul class="nav-item l hidden-xs">
-						<li>
-							<a href="" class="active" target="_self">guanl</a>
-						</li>
-						<li><a href="" target="_self">计划</a></li>
-						<li><a href="" target="_self">分享</a></li>
-						<li><a href="" target="_self">社区</a></li>
-					</ul>
-				</div>
-				<!-- 搜索框  -->
-				<div class="search-area hidden-xs">
-					<form action="/index/search" name="search-form" method="get">
-						<input class="js-input-keyword search-input" placeholder="搜索课程、问答" type="text" autocomplete="off" name="words" value="">
-						<input type="button" class="btn_search js-btn-search">
-						<dl class="search-area-result"></dl>
-					</form>
+				<div class="navbar-form navbar-right btn-header">
+					<a class="btn btn-default" id="logout"><i class="fa fa-sign-out"></i></a>
+					<a class="btn btn-default" id="collmenu"><i
+					class="fa fa-reorder"></i></a>
 				</div>
 			</div>
-		</div>
+		</header>
 
-		<!-- 左边树   -->
 		<aside id="left-panel">
-			<!-- User info -->
-			<!--<div class="login-info">
-				<span> <a href="smart_apps/rbac/mdlconts/userinfo.jsp"
-				id="show-shortcut" data-toggle="modal" data-target="#userInfoModal">
-					<img src="smtapp/images/avatars/${userinfo.username}.png" alt="me"
-					class="online" id="avatar" /> <span> ${userinfo.showname} </span>
-				<i class="fa fa-angle-down"></i>
-				</a>
-				</span>
-			</div>
-			<!-- end user info -->
-
-			<!--<nav>
+			<nav>
 				<ul>
-					<li class="">
-						<a href="ajax/dashboard.html" title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Dashboard</span></a>
+					<li><a href="#" path="proj/jsp/prd/prd.jsp"><i
+						class="fa fa-lg fa-car"></i> <span class="menu-item-parent">基础功能</span></a>
 					</li>
-					<li>
-						<a href="ajax/inbox.html"><i class="fa fa-lg fa-fw fa-inbox"></i> <span class="menu-item-parent">Inbox</span><span class="badge pull-right inbox-badge">14</span></a>
+					<li><a href="#" path="proj/jsp/schd/schd.jsp"><i class="fa fa-lg fa-copy"></i> <span class="menu-item-parent">菜单1</span></a>
 					</li>
-					<li>
-						<a href="#"><i class="fa fa-lg fa-fw fa-bar-chart-o"></i> <span class="menu-item-parent">Graphs</span></a>
+					<li><a href="#"><i class="fa fa-lg fa-database"></i> <span class="menu-item-parent">菜单2</span></a>
 						<ul>
-							<li>
-								<a href="ajax/flot.html">Flot Chart</a>
-							</li>
-							<li>
-								<a href="ajax/morris.html">Morris Charts</a>
-							</li>
-							<li>
-								<a href="ajax/inline-charts.html">Inline Charts</a>
-							</li>
-							<li>
-								<a href="ajax/dygraphs.html">Dygraphs <span class="badge pull-right inbox-badge bg-color-yellow">new</span></a>
-							</li>
+							<li><a href="#" path="proj/jsp/mstfac/mstfac.jsp">子菜单1</a></li>
+							<li><a href="#" path="proj/jsp/bd/cust.jsp">子菜单2</a></li>
 						</ul>
 					</li>
+					<li><a href="#" path="proj/jsp/sysmsg/sysmsg.jsp"><i
+						class="fa fa-lg fa-comment"></i> <span
+						class="menu-item-parent">系统</span></a></li>
 				</ul>
 			</nav>
-			<span class="minifyme" data-action="minifyMenu"> <i
-			class="fa fa-arrow-circle-left hit"></i>
-		</span>-->
+			<span class="minifyme" id="minifyMenu"> <i class="fa fa-arrow-circle-left hit"></i></span>
 		</aside>
 
-		<!-- 主页面   -->
 		<div id="main" role="main">
-
-			<!-- 用户信息Model -->
 			<div id="content"></div>
 		</div>
 

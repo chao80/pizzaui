@@ -1,28 +1,138 @@
-﻿<!--[if IE 9]>
-	<style>
-		.error-text {
-			color: #333 !important;
-		}
-	</style>
-<![endif]-->
-
-	<!-- row -->
- 
-	<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
-	<div class="row"> 
-		<div class="col-sm-12">
-			<div class="text-center error-box">
-				<h1 class="error-text tada animated"><i class="fa fa-times-circle text-danger error-icon-shadow"></i> 访问异常 500</h1>
-				<h2 class="font-xl"><strong>对不起，本功能暂不允许访问!</strong></h2>
-				<br />
-				<p class="lead semi-bold">
-					<strong>您遇到的是一个技术性的错误，向您表达我的谦意.</strong><br><br>
-					<small>
-						 请告知我们，我们将尽快修正这个问题. <br> 同时，你还可以去完成其他的内容
-					</small>
-				</p> 
-			</div> 
-		</div>
+﻿<!DOCTYPE html>
+<style>
+	#clouds {
+		padding: 100px 0;
+		background: #22262E;
+		background: -webkit-linear-gradient(top, #22262E 0%, #fff 100%);
+		background: -linear-gradient(top, #22262E 0%, #fff 100%);
+		background: -moz-linear-gradient(top, #22262E 0%, #fff 100%);
+	}
+	/*Time to finalise the cloud shape*/
+	.cloud {
+		width: 200px;
+		height: 60px;
+		background: #fff;
+		border-radius: 200px;
+		-moz-border-radius: 200px;
+		-webkit-border-radius: 200px;
+		position: relative;
+	}
+	.cloud:before,
+	.cloud:after {
+		content: '';
+		position: absolute;
+		background: #fff;
+		width: 100px;
+		height: 80px;
+		position: absolute;
+		top: -15px;
+		left: 10px;
+		border-radius: 100px;
+		-moz-border-radius: 100px;
+		-webkit-border-radius: 100px;
+		-webkit-transform: rotate(30deg);
+		transform: rotate(30deg);
+		-moz-transform: rotate(30deg);
+	}
+	.cloud:after {
+		width: 120px;
+		height: 120px;
+		top: -55px;
+		left: auto;
+		right: 15px;
+	}
+	/*Time to animate*/
+	
+	.x1 {
+		-webkit-animation: moveclouds 15s linear infinite;
+		-moz-animation: moveclouds 15s linear infinite;
+		-o-animation: moveclouds 15s linear infinite;
+	}
+	/*variable speed, opacity, and position of clouds for realistic effect*/
+	
+	.x2 {
+		left: 200px;
+		-webkit-transform: scale(0.6);
+		-moz-transform: scale(0.6);
+		transform: scale(0.6);
+		opacity: 0.6;
+		/*opacity proportional to the size*/
+		/*Speed will also be proportional to the size and opacity*/
+		/*More the speed. Less the time in 's' = seconds*/
 		
-	</div>
-	<!-- end row --> 
+		-webkit-animation: moveclouds 25s linear infinite;
+		-moz-animation: moveclouds 25s linear infinite;
+		-o-animation: moveclouds 25s linear infinite;
+	}
+	.x3 {
+		left: -250px;
+		top: -200px;
+		-webkit-transform: scale(0.8);
+		-moz-transform: scale(0.8);
+		transform: scale(0.8);
+		opacity: 0.8;
+		/*opacity proportional to the size*/
+		
+		-webkit-animation: moveclouds 20s linear infinite;
+		-moz-animation: moveclouds 20s linear infinite;
+		-o-animation: moveclouds 20s linear infinite;
+	}
+	.x4 {
+		left: 470px;
+		top: -250px;
+		-webkit-transform: scale(0.75);
+		-moz-transform: scale(0.75);
+		transform: scale(0.75);
+		opacity: 0.75;
+		/*opacity proportional to the size*/
+		
+		-webkit-animation: moveclouds 18s linear infinite;
+		-moz-animation: moveclouds 18s linear infinite;
+		-o-animation: moveclouds 18s linear infinite;
+	}
+	.x5 {
+		left: -150px;
+		top: -150px;
+		-webkit-transform: scale(0.8);
+		-moz-transform: scale(0.8);
+		transform: scale(0.8);
+		opacity: 0.8;
+		/*opacity proportional to the size*/
+		
+		-webkit-animation: moveclouds 20s linear infinite;
+		-moz-animation: moveclouds 20s linear infinite;
+		-o-animation: moveclouds 20s linear infinite;
+	}
+	@-webkit-keyframes moveclouds {
+		0% {
+			margin-left: 1000px;
+		}
+		100% {
+			margin-left: -1000px;
+		}
+	}
+	@-moz-keyframes moveclouds {
+		0% {
+			margin-left: 1000px;
+		}
+		100% {
+			margin-left: -1000px;
+		}
+	}
+	@-o-keyframes moveclouds {
+		0% {
+			margin-left: 1000px;
+		}
+		100% {
+			margin-left: -1000px;
+		}
+	}
+</style>
+
+<div id="clouds">
+	<div class="cloud x1"></div>
+	<div class="cloud x2"></div>
+	<div class="cloud x3"></div>
+	<div class="cloud x4"></div>
+	<div class="cloud x5"></div>
+</div>
